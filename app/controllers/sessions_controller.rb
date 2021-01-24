@@ -6,8 +6,8 @@ class SessionsController < ApplicationController
     log_in(user)
     # Refresh_token to request new access_token
     # Note: Refresh_token is only sent once during the first request
-    refresh_token = access_token.credentials.refresh_token
-    user.google_refresh_token = refresh_token if refresh_token.present?
+    # refresh_token = access_token.credentials.refresh_token
+    # user.google_refresh_token = refresh_token if refresh_token.present?
     user.save
     redirect_to root_path
   end

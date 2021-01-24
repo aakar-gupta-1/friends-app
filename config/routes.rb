@@ -4,9 +4,7 @@ Rails.application.routes.draw do
   root 'friends#index'
   get 'home/about'
   # Routes for Google authentication
-  get 'auth/:google_oauth2/callback', to: 'sessions#googleAuth'
-  get 'auth/failure', to: redirect('/')
-  devise_for :users, controllers: {
-    omniauth_callbacks: 'users/omniauth_callbacks'
-  }
+  get 'users/auth/google_oauth2/callback', to: 'sessions#googleAuth'
+  get 'users/auth/failure', to: redirect('/')
+  devise_for :users
 end

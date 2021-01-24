@@ -8,13 +8,13 @@ gem 'rails', '~> 6.1.1'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'jbuilder', '~> 2.7'
-gem 'puma', '~> 5.0'
-gem 'sass-rails', '>= 6'
-gem 'turbolinks', '~> 5'
-gem 'webpacker', '~> 5.0'
-gem 'therubyracer'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
+gem 'puma', '~> 5.0'
+gem 'sass-rails', '>= 6'
+gem 'therubyracer'
+gem 'turbolinks', '~> 5'
+gem 'webpacker', '~> 5.0'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
@@ -38,4 +38,4 @@ group :test do
   gem 'webdrivers'
 end
 
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+# gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
